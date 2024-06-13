@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('BQFw89EARSHLv9FomRSjd2qpVBX8sX53b27EId14WlDCButp_Wb5GnpCW7Tox_Gfan_w6g6B0hxrX_DE3IfqmeDEU-BgINGKcLzR7pUvA-DBWNodtUzqyEm3BDOwvnGnCStMFXzAAgKQcMVa7gGnfm9HN7zAIPEywaQaQf5AV9y_nvLN-Zz25h2sp-2w3nvoRsHBGdTVbJ1PKTb3uqKq-RGcaPHSUOcFezf9sBqgc_ipYs4fF0h6SEVg35cjKpEiHwiWZiHAQQe-tRZmjPMVJhvnWcs5__d3gWDicwssaFUAIXER--k1aH_1fmExjP2VGqcyv2RHgpwJsEwTB9qc1J-TDaf_fgAAAAE4jz8HAA', 'Media_search')
 API_ID = int(environ['24179665'])
 API_HASH = environ['3dceb6d710c2829bafe80b30f9262983']
-BOT_TOKEN = environ['6067178951:AAGYHiYbRLgr4JTBYdV_dxLL99mV0bkTtDQ']
+BOT_TOKEN = environ['7273720798:AAHi-fEZXfs1p-MSmYXFg4OjzVAbuD7QS14']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -22,7 +22,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/3d87cdb638b5444198c59.jpg https://telegra.ph/file/2140af3c0cb1c848ef5a0.jpg https://telegra.ph/file/f5c3720b2ce9d1d97d59f.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('5243879175', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -37,7 +37,7 @@ DATABASE_NAME = environ.get('Flick365', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('1002180214137', 0))
+LOG_CHANNEL = int(environ.get('-1002180214137', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
