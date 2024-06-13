@@ -11,10 +11,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = environ.get('BQFw89EARSHLv9FomRSjd2qpVBX8sX53b27EId14WlDCButp_Wb5GnpCW7Tox_Gfan_w6g6B0hxrX_DE3IfqmeDEU-BgINGKcLzR7pUvA-DBWNodtUzqyEm3BDOwvnGnCStMFXzAAgKQcMVa7gGnfm9HN7zAIPEywaQaQf5AV9y_nvLN-Zz25h2sp-2w3nvoRsHBGdTVbJ1PKTb3uqKq-RGcaPHSUOcFezf9sBqgc_ipYs4fF0h6SEVg35cjKpEiHwiWZiHAQQe-tRZmjPMVJhvnWcs5__d3gWDicwssaFUAIXER--k1aH_1fmExjP2VGqcyv2RHgpwJsEwTB9qc1J-TDaf_fgAAAAE4jz8HAA', 'Media_search')
+API_ID = int(environ['24179665'])
+API_HASH = environ['3dceb6d710c2829bafe80b30f9262983']
+BOT_TOKEN = environ['6067178951:AAGYHiYbRLgr4JTBYdV_dxLL99mV0bkTtDQ']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -32,12 +32,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_URI = environ.get('mongodb+srv://bus1flick365:BL2aXdvgOMQznVpr@cluster0.tg9urr1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
+DATABASE_NAME = environ.get('Flick365', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('1002180214137', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
